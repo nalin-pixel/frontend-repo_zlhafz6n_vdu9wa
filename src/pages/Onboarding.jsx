@@ -1,6 +1,6 @@
-import Spline from '@splinetool/react-spline'
 import { useNavigate } from 'react-router-dom'
 import { useBudgetStore } from '../store/useBudgetStore'
+import SplineHero from '../components/SplineHero'
 
 export default function Onboarding(){
   const navigate = useNavigate()
@@ -16,10 +16,7 @@ export default function Onboarding(){
 
   return (
     <div className="min-h-screen bg-slate-900 text-slate-100">
-      <div className="relative h-64">
-        <Spline scene="https://prod.spline.design/41MGRk-UDPKO-l6W/scene.splinecode" style={{ width: '100%', height: '100%' }} />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent pointer-events-none" />
-      </div>
+      <SplineHero scene="https://prod.spline.design/41MGRk-UDPKO-l6W/scene.splinecode" />
 
       <div className="max-w-md mx-auto px-4 py-6 space-y-6">
         <div>
